@@ -1,13 +1,15 @@
 import json
 from web3 import Web3
 
-from apps.transaction.models import User
 from web3_backend.handler import BaseHandler
 from web3_backend.settings import api_key
 from web3.middleware import geth_poa_middleware
 
 
 class TransferHandler(BaseHandler):
+    def get(self):
+        self.finish('getSuccess');
+
     async def post(self):
         try:
             provider = Web3.HTTPProvider("https://eth-goerli.alchemyapi.io/v2/" + api_key)

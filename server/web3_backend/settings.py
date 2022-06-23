@@ -1,6 +1,6 @@
 import os
 
-import peewee_async
+# import peewee_async
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 api_key = 't0OytI-Gkt-wUXTVJXMthetJq58EQPWL'
@@ -23,6 +23,6 @@ settings = {
     }
 }
 
-database = peewee_async.MySQLDatabase(
-    'blog', host="127.0.0.1", port=3306, user="root", password="Yy141025"
-)
+# database = peewee_async.MySQLDatabase(
+#     'blog', host="127.0.0.1", port=3306, user="root", password="Yy141025"
+# )
